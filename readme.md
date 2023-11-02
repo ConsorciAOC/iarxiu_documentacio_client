@@ -11,7 +11,7 @@ Les següents instruccions estan probades amb un Windows PowerShell 7.3.8.
 Per fer-se servir amb una altra shell caldrà aplicar els canvis necessaris.
 1) Descàrrega del codi font
 ```shell
-> git clone git@github.com:ConsorciAOC-PRJ/iarxiu_client.git
+> git clone git@github.com:ConsorciAOC/iarxiu_documentacio_client.git
 ```
 
 2) Instal·lar dependències del client al repositori de Maven local:
