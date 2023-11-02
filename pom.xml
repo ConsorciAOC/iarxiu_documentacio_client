@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <project xmlns="http://maven.apache.org/POM/4.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>iarxiu.extras</groupId>
+	<artifactId>iarxiu-client</artifactId>
+	<version>2.23.0</version>
+
+	<name>iArxiu Client</name>
+	<description>iArxiu Client</description>
+
+	<properties>
+		<!-- Build properties -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<!-- Dependencies versions -->
+		<iarxiu.libs.version>2.23.0</iarxiu.libs.version>
+		<spring.version>2.5.4</spring.version>
+		<spring-ws.version>1.5.1</spring-ws.version>
+		<commons-httpclient.version>3.1</commons-httpclient.version>
+	</properties>
+
+	<dependencies>
+		<!-- iarxiu.core -->
+		<dependency>
+			<groupId>iarxiu.core</groupId>
+			<artifactId>core-schemas</artifactId>
+			<version>${iarxiu.libs.version}</version>
+		</dependency>
+		<!-- iarxiu.core -->
+		<!-- iarxiu.libs -->
+		<dependency>
+			<groupId>iarxiu.libs</groupId>
+			<artifactId>mets-schema</artifactId>
+			<version>${iarxiu.libs.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>iarxiu.libs</groupId>
+			<artifactId>saml-schema-assertion</artifactId>
+			<version>${iarxiu.libs.version}</version>
+		</dependency>
+		<!-- iarxiu.libs -->
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.ws</groupId>
+			<artifactId>spring-ws-core</artifactId>
+			<version>${spring-ws.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>${commons-httpclient.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- for runtime -->
+		<dependency>
+			<groupId>org.springframework.ws</groupId>
+			<artifactId>spring-ws-security</artifactId>
+			<version>${spring-ws.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>bouncycastle</groupId>
+					<artifactId>bcprov-jdk13</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>xmldsig</artifactId>
+					<groupId>javax.xml.crypto</groupId>
+				</exclusion>
+				<exclusion>
+					<groupId>xerces</groupId>
+					<artifactId>xercesImpl</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	</dependencies>
+
+</project>

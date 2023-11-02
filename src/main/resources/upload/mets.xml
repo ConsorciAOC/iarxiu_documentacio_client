@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:mets TYPE="urn:iarxiu:2.0:templates:catcert:PL_expedient" xmlns:mets="http://www.loc.gov/METS/"  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <mets:dmdSec ID="DMD_1">
+    <mets:mdWrap MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="urn:iarxiu:2.0:vocabularies:catcert:Voc_expedient">
+      <mets:xmlData>
+        <exp:expedient xmlns:exp="http://schemas.user.iarxiu.hp.com/2.0/Voc_expedient">
+          <exp:codi_referencia>q</exp:codi_referencia>
+          <exp:numero_expedient>q</exp:numero_expedient>
+          <exp:codi_classificacio>q</exp:codi_classificacio>
+          <exp:titol_serie_documental>ser1</exp:titol_serie_documental>
+          <exp:nivell_descripcio>Unitat documental composta</exp:nivell_descripcio>
+          <exp:titol>q</exp:titol>
+          <exp:data_obertura>2008-10-22T16:32:00</exp:data_obertura>
+          <exp:data_tancament>2008-10-22T16:32:00</exp:data_tancament>
+          <exp:nom_productor>CATCert</exp:nom_productor>
+          <exp:classificacio_seguretat_acces>Accés públic</exp:classificacio_seguretat_acces>
+          <exp:sensibilitat_dades_LOPD>Nivell alt</exp:sensibilitat_dades_LOPD>
+        </exp:expedient>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DMD_2">
+    <mets:mdWrap MDTYPE="OTHER" MIMETYPE="txt/xml" OTHERMDTYPE="urn:iarxiu:2.0:vocabularies:catcert:Voc_document_exp">
+      <mets:xmlData>
+        <doc:document xmlns:doc="http://schemas.user.iarxiu.hp.com/2.0/Voc_document_exp">
+          <doc:codi_referencia>w</doc:codi_referencia>
+          <doc:titol>w</doc:titol>
+          <doc:data_creacio>2008-10-22T16:32:00</doc:data_creacio>
+          <doc:nivell_descripcio>Unitat documental simple</doc:nivell_descripcio>
+          <doc:suport>w</doc:suport>
+        </doc:document>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:dmdSec ID="DMD_3">
+    <mets:mdWrap MDTYPE="OTHER" MIMETYPE="txt/xml" OTHERMDTYPE="urn:iarxiu:2.0:vocabularies:catcert:Voc_document_exp">
+      <mets:xmlData>
+        <doc:document xmlns:doc="http://schemas.user.iarxiu.hp.com/2.0/Voc_document_exp">
+          <doc:codi_referencia>e</doc:codi_referencia>
+          <doc:titol>e</doc:titol>
+          <doc:data_creacio>2008-10-22T16:32:00</doc:data_creacio>
+          <doc:nivell_descripcio>Unitat documental simple</doc:nivell_descripcio>
+          <doc:suport>e</doc:suport>
+          <doc:sensibilitat_dades_LOPD>Nivell baix</doc:sensibilitat_dades_LOPD>
+        </doc:document>
+      </mets:xmlData>
+    </mets:mdWrap>
+  </mets:dmdSec>
+  <mets:fileSec>
+    <mets:fileGrp ID="BIN_1">
+      <mets:file CHECKSUM="ef83b670c785f0a9a5c22e1550d6f05084fcf811" CHECKSUMTYPE="SHA-1" CREATED="2008-10-22T16:28:34.939+02:00" ID="BIN_1.0" MIMETYPE="image/jpeg">
+        <mets:FLocat LOCTYPE="URL" xlin:href="jpeg.jpeg" xmlns:xlin="http://www.w3.org/1999/xlink"/>
+      </mets:file>
+    </mets:fileGrp>
+    <mets:fileGrp ID="BIN_2">
+      <mets:file CHECKSUM="170a39e30c08468e3800c75ab04c107e2abf2631" CHECKSUMTYPE="SHA-1" CREATED="2008-10-22T16:28:35.513+02:00" ID="BIN_2.0" MIMETYPE="application/pdf">
+        <mets:FLocat LOCTYPE="URL" xlin:href="queja_20k.pdf" xmlns:xlin="http://www.w3.org/1999/xlink"/>
+      </mets:file>
+    </mets:fileGrp>
+  </mets:fileSec>
+  <mets:structMap>
+    <mets:div DMDID="DMD_1" LABEL="Expedient sin firmas">
+      <mets:div DMDID="DMD_2" LABEL="fact_1">
+        <mets:div LABEL="jpeg.jpeg">
+          <mets:fptr FILEID="BIN_1"/>
+        </mets:div>
+      </mets:div>
+      <mets:div DMDID="DMD_3" LABEL="extra">
+        <mets:div LABEL="queja_20k.pdf">
+          <mets:fptr FILEID="BIN_2"/>
+        </mets:div>
+      </mets:div>
+    </mets:div>
+  </mets:structMap>
+</mets:mets>
