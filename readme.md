@@ -9,9 +9,10 @@ Client per interactuar amb iArxiu. Configurat per fer-se servir a l'entorn de pr
 # Compilació i ús
 Les següents instruccions estan probades amb un Windows PowerShell 7.3.8. 
 Per fer-se servir amb una altra shell caldrà aplicar els canvis necessaris.
+
 1) Descàrrega del codi font
 ```shell
-> git clone git@github.com:ConsorciAOC-PRJ/iarxiu_client.git
+> git clone git@github.com:ConsorciAOC/iarxiu_documentacio_client.git
 ```
 
 2) Instal·lar dependències del client al repositori de Maven local:
@@ -25,14 +26,13 @@ Ens situem a l'arrel del projecte clonat
 > mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile='.\lib\opensaml-1.1.jar' -DgroupId=opensaml -DartifactId=opensaml -Dversion='1.1' -Dpackaging=jar
 ```
 
-
 7. Compilar projecte
 ```shell
 > mvn clean package
 ...
 ...
 [INFO] --- jar:3.3.0:jar (default-jar) @ iarxiu-client ---
-[INFO] Building jar: C:\iarxiu_client\target\iarxiu-client-2.23.0.jar
+[INFO] Building jar: C:\iarxiu_documentacio_client\target\iarxiu-client-2.23.0.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
