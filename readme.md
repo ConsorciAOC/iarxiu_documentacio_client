@@ -1,4 +1,4 @@
-﻿# iarxiu_client
+﻿# Client Java d'iArxiu
 Client per interactuar amb iArxiu. Configurat per fer-se servir a l'entorn de preproducció (amb ens/fons i clau CDA d'autenticació ja existents a iArxiu).
 
 # Requeriments tècnics
@@ -40,7 +40,7 @@ Ens situem a l'arrel del projecte clonat
 [INFO] Finished at: 2023-10-18T11:27:28+02:00
 [INFO] ------------------------------------------------------------------------
 ```
-Un cop compilat pot ser executat via CLI amb java o amb un IDE (IntelliJ/Eclipse...).
+Un cop compilat, les classes de src/main/java/net/catcert/iarxiu/client/test poden ser executat via CLI amb Java o amb un IDE (IntelliJ/Eclipse...).
 
 
 # Configuració
