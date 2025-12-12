@@ -39,7 +39,7 @@ public class MigrateBinaryTest {
 			MigrateBinaryRequest request = requestDocument.addNewMigrateBinaryRequest();
 
 			// Identificador del paquet
-			request.setPackageId("catcert:m02396:20230825-125258393:3844");
+			request.setPackageId("catcert:1764904091507:20251212-135353912:5050");
 
 			// Identificador del binari
 			request.setBinaryId("BIN_1.0");

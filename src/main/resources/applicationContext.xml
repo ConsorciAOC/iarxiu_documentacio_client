@@ -4,14 +4,14 @@
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
 	<bean id="downloadByTicketUrl" class="java.lang.String">
-		<constructor-arg value="https://www.preproduccio.iarxiu.eacat.cat/core/servlet/downloadByTicket" />
+		<constructor-arg value="https://iarxiu-pre.aoc.cat/core/servlet/downloadByTicket" />
 	</bean>
 	<bean id="uploadUrl" class="java.lang.String">
-		<constructor-arg value="https://www.preproduccio.iarxiu.eacat.cat/core/servlet/upload" />
+		<constructor-arg value="https://iarxiu-pre.aoc.cat/core/servlet/upload" />
 	</bean>
 
 	<bean id="proxyClient" class="net.catcert.iarxiu.client.proxy.ProxyClient">
-		<property name="defaultUri" value="https://www.preproduccio.iarxiu.eacat.cat/core/soap/"/>
+		<property name="defaultUri" value="https://iarxiu-pre.aoc.cat/core/soap/"/>
 		<property name="interceptors">
 			<list>
 				<ref bean="samlInterceptor"/>
@@ -35,7 +35,7 @@
 
 	<bean id="crypto" class="org.springframework.ws.soap.security.wss4j.support.CryptoFactoryBean">
 		<property name="keyStoreType" value="pkcs12"/>
-		<property name="keyStoreLocation" value="classpath:stores/preproduccio/CDA-1_00.p12"/>
+		<property name="keyStoreLocation" value="classpath:stores/preproduccio/CDA-1_00_2024.p12"/>
 		<property name="keyStorePassword" value="1234"/>
 	</bean>
 

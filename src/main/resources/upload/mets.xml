@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mets:mets TYPE="urn:iarxiu:2.0:templates:catcert:PL_expedient" xmlns:mets="http://www.loc.gov/METS/"  xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?><mets:mets xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TYPE="urn:iarxiu:2.0:templates:catcert:PL_expedient" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd">
   <mets:dmdSec ID="DMD_1">
     <mets:mdWrap MDTYPE="OTHER" MIMETYPE="text/xml" OTHERMDTYPE="urn:iarxiu:2.0:vocabularies:catcert:Voc_expedient">
       <mets:xmlData>
@@ -11,7 +10,7 @@
           <exp:nivell_descripcio>Unitat documental composta</exp:nivell_descripcio>
           <exp:titol>q</exp:titol>
           <exp:data_obertura>2008-10-22T16:32:00</exp:data_obertura>
-          <exp:data_tancament>2008-10-22T16:32:00</exp:data_tancament>
+          <exp:data_tancament>2025-12-12T13:50:24</exp:data_tancament>
           <exp:nom_productor>CATCert</exp:nom_productor>
           <exp:classificacio_seguretat_acces>Accés públic</exp:classificacio_seguretat_acces>
           <exp:sensibilitat_dades_LOPD>Nivell alt</exp:sensibilitat_dades_LOPD>
@@ -49,12 +48,12 @@
   <mets:fileSec>
     <mets:fileGrp ID="BIN_1">
       <mets:file CHECKSUM="ef83b670c785f0a9a5c22e1550d6f05084fcf811" CHECKSUMTYPE="SHA-1" CREATED="2008-10-22T16:28:34.939+02:00" ID="BIN_1.0" MIMETYPE="image/jpeg">
-        <mets:FLocat LOCTYPE="URL" xlin:href="jpeg.jpeg" xmlns:xlin="http://www.w3.org/1999/xlink"/>
+        <mets:FLocat xmlns:xlin="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlin:href="jpeg.jpeg"/>
       </mets:file>
     </mets:fileGrp>
     <mets:fileGrp ID="BIN_2">
       <mets:file CHECKSUM="170a39e30c08468e3800c75ab04c107e2abf2631" CHECKSUMTYPE="SHA-1" CREATED="2008-10-22T16:28:35.513+02:00" ID="BIN_2.0" MIMETYPE="application/pdf">
-        <mets:FLocat LOCTYPE="URL" xlin:href="queja_20k.pdf" xmlns:xlin="http://www.w3.org/1999/xlink"/>
+        <mets:FLocat xmlns:xlin="http://www.w3.org/1999/xlink" LOCTYPE="URL" xlin:href="queja_20k.pdf"/>
       </mets:file>
     </mets:fileGrp>
   </mets:fileSec>

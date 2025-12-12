@@ -7,7 +7,7 @@
 
 	<groupId>iarxiu.extras</groupId>
 	<artifactId>iarxiu-client</artifactId>
-	<version>2.23.0</version>
+	<version>4.5.0</version>
 
 	<name>iArxiu Client</name>
 	<description>iArxiu Client</description>
@@ -19,7 +19,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<!-- Dependencies versions -->
-		<iarxiu.libs.version>2.23.0</iarxiu.libs.version>
+		<iarxiu.libs.version>4.5.0</iarxiu.libs.version>
 		<spring.version>2.5.4</spring.version>
 		<spring-ws.version>1.5.1</spring-ws.version>
 		<commons-httpclient.version>3.1</commons-httpclient.version>
