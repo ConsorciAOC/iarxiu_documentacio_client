@@ -20,9 +20,9 @@ Per fer-se servir amb una altra shell caldrà aplicar els canvis necessaris.
 Ens situem a l'arrel del projecte clonat
 ```shell
 > cd C:\iarxiu_client\
-> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\core-schemas-4.5.0.jar -DgroupId=iarxiu.core -DartifactId=core-schemas -Dversion=4.5.0
-> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\mets-schema-4.5.0.jar -DgroupId=iarxiu.libs -DartifactId=mets-schema -Dversion=4.5.0 -Dpackaging=jar
-> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\saml-schema-assertion-4.5.0.jar -DgroupId=iarxiu.libs -DartifactId=saml-schema-assertion -Dversion=4.5.0 -Dpackaging=jar
+> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\core-schemas-5.0.0.jar -DgroupId=iarxiu.core -DartifactId=core-schemas -Dversion=5.0.0
+> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\mets-schema-5.0.0.jar -DgroupId=iarxiu.libs -DartifactId=mets-schema -Dversion=5.0.0 -Dpackaging=jar
+> mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\saml-schema-assertion-5.0.0.jar -DgroupId=iarxiu.libs -DartifactId=saml-schema-assertion -Dversion=5.0.0 -Dpackaging=jar
 > mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\opensaml-1.1.jar -DgroupId=opensaml -DartifactId=opensaml -Dversion=1.1 -Dpackaging=jar
 ```
 
@@ -32,7 +32,7 @@ Ens situem a l'arrel del projecte clonat
 ...
 ...
 [INFO] --- jar:3.3.0:jar (default-jar) @ iarxiu-client ---
-[INFO] Building jar: C:\iarxiu_documentacio_client\target\iarxiu-client-4.5.0.jar
+[INFO] Building jar: C:\iarxiu_documentacio_client\target\iarxiu-client-5.0.0.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
