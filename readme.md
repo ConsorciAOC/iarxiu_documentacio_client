@@ -3,6 +3,9 @@
 |**Recordeu que els entorns de DEV i PRE estan destinats únicament per a l’ús de proves** i que, d’acord amb el Supervisor Europeu de Protecció de Dades (EDPS), **en cap cas podem fer servir dades personals reals**. Així doncs, als entorns de DEV i PRE hem de fer servir exclusivament dades fictícies o creades artificialment. |
 |A l'hora de realitzar la vostra integració, tingueu present les recomanacions sobre **Protecció de Dades** recollides al document [La privacitat des del disseny i la privacitat per defecte - Guia per a desenvolupadors](https://www.apdcat.cat/content/dam/aem-apdcat/03-documentacio/documents/guiadesenvolupadors/GUIA-PDDD.pdf) de l'APDCAT. |
 
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) Us suggerim que a l'hora de realitzar la vostra integració amb VALId tingueu presents les recomanacions recollides al document [La privacitat des del disseny i la privacitat per defecte - Guia per a desenvolupadors][APDCAT] de l'APDCAT.
+
+[APDCAT]:https://apdcat.gencat.cat/ca/documentacio/guies_basiques/Guies-apdcat/la-privacitat-des-del-disseny-i-la-privacitat-per-defecte.-guia-per-a-desenvolupadors/
  
  # Client Java d'iArxiu
 Client per interactuar amb iArxiu. Configurat per fer-se servir a l'entorn de preproducció (amb ens/fons i clau CDA d'autenticació ja existents a iArxiu).
