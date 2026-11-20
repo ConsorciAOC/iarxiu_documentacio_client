@@ -1,4 +1,4 @@
-|IMPORTANT |
+﻿|IMPORTANT |
 |---- | 
 |**Recordeu que els entorns de DEV i PRE estan destinats únicament per a l’ús de proves** i que, d’acord amb el Supervisor Europeu de Protecció de Dades (EDPS), **en cap cas podem fer servir dades personals reals**. Així doncs, als entorns de DEV i PRE hem de fer servir exclusivament dades fictícies o creades artificialment. |
 |A l'hora de realitzar la vostra integració, tingueu present les recomanacions sobre **Protecció de Dades** recollides al document [La privacitat des del disseny i la privacitat per defecte - Guia per a desenvolupadors](https://www.apdcat.cat/content/dam/aem-apdcat/03-documentacio/documents/guiadesenvolupadors/GUIA-PDDD.pdf) de l'APDCAT. |
@@ -25,7 +25,7 @@ Per fer-se servir amb una altra shell caldrà aplicar els canvis necessaris.
 
 Ens situem a l'arrel del projecte clonat
 ```shell
-> cd C:\iarxiu_client\
+> cd C:\iarxiu_documentacio_client\
 > mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\core-schemas-5.5.0.jar -DgroupId=iarxiu.core -DartifactId=core-schemas -Dversion=5.5.0
 > mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\mets-schema-5.5.0.jar -DgroupId=iarxiu.libs -DartifactId=mets-schema -Dversion=5.5.0 -Dpackaging=jar
 > mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=.\lib\saml-schema-assertion-5.5.0.jar -DgroupId=iarxiu.libs -DartifactId=saml-schema-assertion -Dversion=5.5.0 -Dpackaging=jar
@@ -74,16 +74,16 @@ addAttribute(attributeStatement, "urn:iarxiu:2.0:names:member-of", "archivists")
 ```
 
 # Descripció directoris
-### iarxiu_client\exemples-METS
+### iarxiu_documentacio_client\exemples-METS
 Conté exemples de METS per carregar a iArxiu.
 
-### iarxiu_client\out\samples
+### iarxiu_documentacio_client\out\samples
 Conté peticions i respostes d'exemple de les diferents operacions suportades (directori creat després d'executar les classes de test).
 
-### iarxiu_client\wsdl
-Conté els fitxers WSDL de les operacions d'ingrés (ingest.wsdl), i consulta (dissemination.wsdl).
+### iarxiu_documentacio_client\wsdl
+Conté els fitxers WSDL de les operacions d'ingrés (ingest.wsdl), consulta (dissemination.wsdl) i administració (administration.wsdl).
 
-### iarxiu_client\lib
+### iarxiu_documentacio_client\lib
 Conté les llibreries necessàries pel client d'iArxiu.
 
 # Descripció classes
